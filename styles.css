@@ -1,0 +1,228 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, ol {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set background and text color for the body */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+}
+
+/* Navigation styling */
+nav {
+  width: 100%;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for visual separation */
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center; /* Center the list items horizontally */
+  padding: 5px 0;
+  margin: 0; /* Reset margin */
+}
+
+.nav-list li {
+  margin: 0 5px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.nav-list a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Container styling */
+.container {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  max-width: 600px;
+  margin-top: 20px; /* Add margin-top to create space below the nav */
+  width: 100%;
+}
+
+/* Image styling */
+.responsive-image {
+  width: 100%; /* Make the image responsive */
+  max-width: 300px; /* Ensure it does not get too large */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: add rounded corners */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+/* Header and text styling */
+h1 {
+  color: salmon;
+}
+
+h2 {
+  color: black;
+  font-size: 1.2em;
+}
+
+h3, p, ol, ul {
+  color: black;
+  font-size: 0.9em;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure the input elements respect the container's width */
+}
+
+button {
+  background-color: salmon;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: salmon;
+}
+
+/* Table styling */
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.nutrition-table th,
+.nutrition-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.nutrition-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.nutrition-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.nutrition-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px 20px;
+  }
+
+  .nav-list a {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .responsive-image {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h3, p, ol, ul {
+    font-size: 0.8em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px 15px;
+  }
+
+  .nav-list a {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+
+  .responsive-image {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 0.9em;
+  }
+
+  h3, p, ol, ul {
+    font-size: 0.7em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
